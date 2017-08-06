@@ -1,0 +1,60 @@
+/* Stylesheet for custom page*/
+.title{
+background:url(../images/banner.jpg);
+color:#fff9e9;
+width:100%;
+height:auto;
+display:block;
+padding:5px;
+}
+.contact{
+display:block;
+width:100%;
+}
+.social{
+	float:right;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding:10px;
+	margin:2px;
+	background-color: #363959;
+}
+.social:hover{
+    width: 32px;
+    height: 32px;
+}
+.insta{
+	background-color:#225982;
+}
+.linkedin{
+
+}
+.email{
+
+}
+.nav{
+margin: auto;
+width: 50%;
+}
+.nav_indv{
+padding:3px;
+margin:2px;
+background-color:#fff9e9;
+border: 2px solid;
+border-radius:5px;
+color:#363959;
+text-decoration: none;
+}
+.nav_indv:hover{
+padding:5px;	
+opacity:.8;
+}
+/*------------------Begin Mobile/Small Screen Only------------------*/
+@media only screen and (max-width: 1200px)
+{
+	.nav_indv{
+		text-align:center;
+		display:block;
+	}
+}
