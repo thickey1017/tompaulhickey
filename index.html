@@ -8,34 +8,39 @@
 	</head>
 	<body>
 		<div class="title">
-			<div class="contact">
-				<a href="https://www.linkedin.com/in/thomas-hickey-05736358/" class="social"><img src="./images/linkedin.png" width="100%" height="100%"></a>
-				<a href="https://www.instagram.com/hickeyt/" class="social"><img src="./images/insta.png" width="100%" height="100%"></a>
-				<a href="mailto:info@tompaulhickey.com" class="social"><img src="./images/email.png" width="100%" height="100%"></a>
-			</div>
 			<h1>Hi, I'm Tom Hickey</h1>
-			<h4>"It is hard to fail, but it is worse never to have tried to succeed." -Theodore Roosevelt<br>
-			"'You miss 100% of the shots you never take.' -Wayne Gretzky" -Michael Scott</h4>
+			<h3>Under Construction as of 8/6/17</h3>
 			<div class="nav">
-				<a href="#aboutMe" class="nav_indv"> About Me</a>
-				<a href="#profExp" class="nav_indv">Experience</a>
-				<a href="#favReads" class="nav_indv">Favorite Reads</a>
-				<a href="#patEng" class="nav_indv">Patient Engagement Ruminations</a>
+					<a href="#aboutMe" id="aboutMeLink" onclick="showSection(this.id)" class="nav_indv"><img src="./images/aboutme.png" width="100%" height="100%">About Me</a>
+					<a href="#profExp" id="profExpLink" onclick="showSection(this.id)" class="nav_indv"><img src="./images/mountain.jpg" width="100%" height="100%">Experience</a>
+					<a href="#favReads" id="favReadsLink" onclick="showSection(this.id)" class="nav_indv"><img src="./images/book.png" width="100%" height="100%">Favorite Reads</a>
+					<a href="#patEng" id="patEngLink" onclick="showSection(this.id)" class="nav_indv"><img src="./images/heartbeat.png" width="100%" height="100%">Patient Engagement</a>
+					<a href="https://www.linkedin.com/in/thomas-hickey-05736358/" class="social"><img src="./images/linkedin.png" width="100%" height="100%">LinkedIn</a>
+					<a href="mailto:info@tompaulhickey.com" class="social"><img src="./images/email.png" width="100%" height="100%">Email</a>
 			</div>
 		</div>
-		<div id="aboutMe">
+		<div id="aboutMe" class="dispNone">
+			About Me
 		</div>
-		<div id="profExp">
+		<div id="profExp" class="dispNone">
+			Prof Experience
 			<div class="nav">
-				<a href="#" onclick="expSelection()" class="nav_indv">Education</a>
-				<a href="#" onclick="expSelection()" class="nav_indv">Amazon.com</a>
-				<a href="#" onclick="expSelection()" class="nav_indv">Epic System</a>
-				<div id="expDetail">Placeholder before experience is selected</div>
+				<div class="section_header">
+					<h2>Experience</h2>
+					<h4>Pretext that always exists.</h4>
+				</div>
+				<a href="#" onclick="expSelection(this.id)" id="education"><img class="exp_img" src="./images/nd.png"></a>
+				<a href="#" onclick="expSelection(this.id)" id="amazon"><img class="exp_img" src="./images/amazon.png"></a>
+				<a href="#" onclick="expSelection(this.id)" id="epic"><img class="exp_img" src="./images/epic.png"></a>
+				<div id="expDetail"></div>
 			</div>
 		</div>
-		<div id="favReads">
+		<div id="favReads" class="dispNone">
+			Favorite Reads
 		</div>
-		<div id="patEng">
+		<div id="patEng" class="dispNone">
+		Pat Eng
 		</div>
+			<a href="#title" id="rehome" class="dispNone" onclick="showSection(this.id)"><img src="./images/rehome.png" width="100%" height="100%"></a>
 	</body>
 </html>
