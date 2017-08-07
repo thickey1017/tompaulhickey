@@ -1,15 +1,3 @@
-function myFunction() {
-   document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-function expSelection(clicked_id) {
-				if (clicked_id=="epic") {
-					document.getElementById("expDetail").innerHTML = "Epic text";
-				} else if (clicked_id=="education") {
-					document.getElementById("expDetail").innerHTML = "Education text";
-				} else if (clicked_id=="amazon"){
-					document.getElementById("expDetail").innerHTML = "Amazon text";
-				}
-}
 function showSection(clicked_id) {
 				if (clicked_id=="aboutMeLink") {
 					$("#aboutMe").removeClass("dispNone");

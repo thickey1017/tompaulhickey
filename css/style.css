@@ -39,7 +39,7 @@ padding:5px;
 	text-align:center;
 }
 .social:hover{
-	opacity: .7;
+	opacity: .5;
 	color:white;
 }
 .nav{
@@ -57,11 +57,12 @@ padding:5px;
 	text-align:center;
 }
 .nav_indv:hover{
-	opacity: .7;
+	opacity: .5;
 	color:white;
 }
 .section_header{
 text-align:center;	
+color:#4B0082;
 }
 .section_header h4, .section_header h2{
 margin:5px;
@@ -76,28 +77,37 @@ margin:5px;
 #aboutMe{
 height:250px;
 width:100%;
-background-color:rgba(256,256,256,.4)	
+background-color:rgba(256,256,256,.8)	
 }
 /*-------------------End About Me-----------------------*/
 /*-------------------Experience-----------------------*/
 #profExp{
 height:250px;
 width:100%;
-background-color:rgba(256,256,256,.4)	
+background-color:rgba(256,256,256,.8)
+}
+#profExp img{
+width:200px;
+height:auto;	
+margin:0 70px 0 70px;
+}
+#profExp table{
+	text-align:center;
+	margin:auto;
 }
 /*-------------------End Experience-----------------------*/
 /*-------------------Favorite Reads-----------------------*/
 #favReads{
 height:250px;
 width:100%;
-background-color:rgba(256,256,256,.4)	
+background-color:rgba(256,256,256,.8)	
 }
 /*-------------------End Favorite Reads-----------------------*/
 /*-------------------Patient Engagement-----------------------*/
 #patEng{
 height:250px;
 width:100%;
-background-color:rgba(256,256,256,.4)	
+background-color:rgba(256,256,256,.8)	
 }
 /*-------------------End Patient Engagement-----------------------*/
 /*-------------------Master Switch Class----------------*/
