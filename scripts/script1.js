@@ -31,7 +31,3 @@ function showSection(clicked_id) {
 					$("#aboutMe").addClass("dispNone");
 				}
 }
-//onclick event example- whenever a .tph class is clicked, action happens
-//$(".tph").click(function(){
-  // action goes here!!
-//});

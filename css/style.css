@@ -28,7 +28,7 @@ font-size:20px;
 color:#fff9e9;
 width:100%;
 display:block;
-padding:5px;
+padding:0 0 20px;
 }
 .social{
     display: inline-block;
@@ -75,10 +75,24 @@ margin:5px;
 }
 /*-------------------About Me-----------------------*/
 #aboutMe{
-height:250px;
+height:100%;
 width:100%;
-background-color:rgba(256,256,256,.8)	
+background-color:rgba(256,256,256,.8);
+padding:10px;
 }
+.aboutMeTable img{
+	width:300px;
+	height:auto;
+	padding:5px;
+	border-radius:15px;
+}
+.aboutMeTableRight{
+	float:right;
+}
+.aboutMeTable{
+	width:100%;
+}
+
 /*-------------------End About Me-----------------------*/
 /*-------------------Experience-----------------------*/
 #profExp{
