@@ -67,6 +67,13 @@ color:#4B0082;
 .section_header h4, .section_header h2{
 margin:5px;
 }
+.section_details{	
+color:#585983;
+}
+.quote{
+margin:30px;
+text-align:center;	
+}
 #rehome{
 	width:40px;
 	height:40px;
@@ -92,6 +99,7 @@ padding:10px;
 .aboutMeTable{
 	width:100%;
 }
+
 
 /*-------------------End About Me-----------------------*/
 /*-------------------Experience-----------------------*/
