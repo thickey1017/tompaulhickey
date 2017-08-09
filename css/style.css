@@ -80,6 +80,52 @@ text-align:center;
 	float:right;
 	margin:20px;
 }
+/*-------------Favorite Reads------------------*/
+#favReads{
+	text-align:center;
+	height:100%;
+	width:100%;
+	background-color:rgba(256,256,256,.8);
+	padding:10px;
+}
+.books_indv{
+	display:inline-block;
+	background-color:none;
+	text-decoration:none;
+	width:185px;
+	height:auto;
+	color:transparent;
+	text-align:center;
+	margin:20px;
+}
+.books_indv:hover{
+	opacity: .5;
+	color:#4B0082;
+}
+.books_detail{
+	display:inline-block;
+	background-color:none;
+	text-decoration:none;
+	width:185px;
+	height:auto;
+	text-align:center;
+	margin:20px;
+}
+.bookDetailsTable{
+    margin-left:auto; 
+    margin-right:auto;
+	width:50%;
+}
+.bookDetailsTable td{
+	text-align:left;
+	word-wrap:break-word;
+}
+#deepDetails{text-align:center;}
+.returnarrow{
+	width:25px;
+	height:auto;
+}
+/*--------------End Favorite Reads-------------*?
 /*-------------------About Me-----------------------*/
 #aboutMe{
 height:100%;
@@ -118,13 +164,6 @@ margin:0 70px 0 70px;
 	margin:auto;
 }
 /*-------------------End Experience-----------------------*/
-/*-------------------Favorite Reads-----------------------*/
-#favReads{
-height:250px;
-width:100%;
-background-color:rgba(256,256,256,.8)	
-}
-/*-------------------End Favorite Reads-----------------------*/
 /*-------------------Patient Engagement-----------------------*/
 #patEng{
 height:250px;
