@@ -10,6 +10,7 @@
 		<div class="title">
 			<h1>Hi, I'm Tom Hickey</h1>
 			<h3>A fun side project recently under construction as of 8/6/17. Come back soon!</h3>
+			<h4>Future Plans: Actually having content. Mobile responsiveness. Fun, challenging, and unnecessary jquery usage.</h4>
 			<div class="nav">
 					<a href="#aboutMe" id="aboutMeLink" onclick="showSection(this.id)" class="nav_indv"><img src="./images/aboutme.png" width="100%" height="100%">About Me</a>
 					<a href="#profExp" id="profExpLink" onclick="showSection(this.id)" class="nav_indv"><img src="./images/mountain.jpg" width="100%" height="100%">Experience</a>
@@ -26,7 +27,7 @@
 							<td><img src="./images/sun_use.jpg"  width="100%" height="100%"></td>
 							<td>
 								<div class="section_header">
-									<h2>My name is Tom Hickey and my focus is on improving patient engagement through technology.</h2>
+									<h2>My name is Tom Hickey and my focus is on empowering patients to partner in their health care through technology.</h2>
 								</div>
 								<div class="section_details">
 									<br>I am a team lead manager at Epic Systems for the MyChart application. Through my experience with process optimization via my internships at Amazon.com and my problem solving skills developed while earning a degree in mechanical engineering, I drive our customers to achieve outcomes through effective use of the system.
@@ -44,7 +45,7 @@
 					<h2>Experience</h2>
 					<h4>"Wisdom comes from experience. Experience is often a result of lack of wisdom."  -Terry Pratchett</h4>
 				</div>
-				<table>
+				<table class="profExpTable">
 					<tbody>
 						<tr>
 							<td><img src="./images/nd.png"></td>
@@ -54,7 +55,7 @@
 						<tr>
 							<td><i>Bachelor of Science in Mechanical Engineering<br>Minor in Engineering Corporate Practice<br>2010 - 2014</i></td>
 							<td><i>Leadership Operations Intern<br>Summers 2012 & 2013</i></td>
-							<td><i>Team Lead Manager & Technical Coordinator<br>2014 to Current</i</td>
+							<td><i>Team Lead Manager<br>Technical Coordinator<br>2014 to Current</i</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -134,10 +135,44 @@
 		</div>
 		<div id="patEng" class="dispNone">
 			<div class="section_header">
-						<h2>Patient Engagement Ruminations</h2>
-						<h4>"Patient engagement is the blockbuster drug of the century."  -Dr. Farzad Mostashari</h4>
-					</div>
+				<h2>Patient Engagement Ruminations</h2>
+				<h4>"Patient engagement is the blockbuster drug of the century."  -Dr. Farzad Mostashari</h4>
 			</div>
-			<a href="#title" id="rehome" class="dispNone" onclick="showSection(this.id)"><img src="./images/rehome.png" width="100%" height="100%"></a>
+			<div id="patEngMenu" class="patEngContainer">
+				<a href="#patEng" id="patEngMULink" class="patEng_options_single" onclick="showPatEngSection(this.id)"><span class="spanClass">Patient engagement v patient experience? Where should your focus be?</span></a>
+				<a href="#patEng" id="patEngExpLink" class="patEng_options_single" onclick="showPatEngSection(this.id)"><span class="spanClass">Developing a patient engagement strategy: Where to start? Where's the value?</span></a>
+				<a href="#patEng" id="patEngStrategyLink" class="patEng_options_single" onclick="showPatEngSection(this.id)"><span class="spanClass">Do the Patient Electronic Access measures of Meaningful Use actually promote engagement?</span></a>
+			</div>
+			<div class="patEngTables">
+				<table id="patEngMU" class="dispNone">
+					<tbody>
+						<tr>
+							<td>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</td>
+							<td><a href="#patEng" onclick="resetPatEng()"><img src="./images/returnarrow.png" class="returnarrow" width="100%" height="100%"></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table id="patEngExp" class="dispNone">
+					<tbody>
+						<tr>
+							<td>2Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</td>
+							<td><a href="#patEng" onclick="resetPatEng()"><img src="./images/returnarrow.png" class="returnarrow" width="100%" height="100%"></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table id="patEngStrategy" class="dispNone">
+					<tbody>
+						<tr>
+							<td>3Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</td>
+							<td><a href="#patEng" onclick="resetPatEng()"><img src="./images/returnarrow.png" class="returnarrow" width="100%" height="100%"></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<a href="#title" id="rehome" class="dispNone" onclick="showSection(this.id)"><img src="./images/rehome.png" width="100%" height="100%"></a>
 	</body>
 </html>

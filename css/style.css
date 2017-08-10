@@ -159,9 +159,10 @@ width:200px;
 height:auto;	
 margin:0 70px 0 70px;
 }
-#profExp table{
+.profExpTable{
 	text-align:center;
 	margin:auto;
+	width:70%;
 }
 /*-------------------End Experience-----------------------*/
 /*-------------------Patient Engagement-----------------------*/
@@ -169,6 +170,43 @@ margin:0 70px 0 70px;
 height:250px;
 width:100%;
 background-color:rgba(256,256,256,.8)	
+}
+.patEngOptionsTable{
+	margin-top:25px;
+	margin-left:auto; 
+    margin-right:auto;
+	width:60%;
+}
+.patEngContainer{
+	text-align:center;
+	margin:auto;
+}
+.patEng_options_single{
+	display:inline-block;
+	background-color:rgba(54,57,89,1);
+	text-align:center;
+	height:100px;
+	line-height:100px;
+	width:25%;
+	padding:25px;
+	color:white;
+	text-decoration:none;
+}
+.spanClass{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+}
+.patEng_options_single:hover{
+	background-color:rgba(54,57,89,.8);
+}
+#patEngMU, #patEngStrategy, #patEngExp{
+	width:70%;
+	margin:auto;
+	padding:25px;
+}
+.patEngTables{
+	text-align:center;
 }
 /*-------------------End Patient Engagement-----------------------*/
 /*-------------------Master Switch Class----------------*/
