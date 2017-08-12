@@ -7,6 +7,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
 	font-family: "Arial", "Verdana", Times, serif;
+	position:fixed; /*necessary to take up full screen on mobile*/
 }
 .exp_img{
     height: auto; 
@@ -137,9 +138,6 @@ padding:10px;
 	height:auto;
 	padding:5px;
 	border-radius:15px;
-}
-.aboutMeTableRight{
-	float:right;
 }
 .aboutMeTable{
 	width:100%;
