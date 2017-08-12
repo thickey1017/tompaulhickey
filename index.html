@@ -30,7 +30,7 @@
 									<h2>My name is Tom Hickey and my focus is on empowering patients to partner in their care through technology.</h2>
 								</div>
 								<div class="section_details">
-									<br>I am a team lead manager at Epic Systems for the MyChart application. Through my experience with process optimization via my internships at Amazon.com and my problem solving skills developed while earning a degree in mechanical engineering, I drive our customers to achieve outcomes through effective use of the system.
+									<br>I am a team lead manager at Epic Systems for the MyChart application. Through my experience with process optimization via my internships at Amazon.com and my problem solving skills developed while earning a degree in mechanical engineering, I drive our customers to achieve outcomes through effective use of their Electronic Health Record system.
 									<br><br>While not at work I play rugby and basketball, read biographies and science fiction, and watch too many movies featuring Jean Claude Van Damme, Arnold Schwarzenegger, and the like.
 									<div class="quote">"'You miss 100% of the shots you don't take.' -Wayne Gretzky" -Michael Scott</div>
 								</div>
@@ -45,25 +45,50 @@
 					<h2>Experience</h2>
 					<h4>"Wisdom comes from experience. Experience is often a result of lack of wisdom."  -Terry Pratchett</h4>
 				</div>
-				<table class="profExpTable">
-					<tbody>
-						<tr>
-							<td><img src="./images/nd.png"></td>
-							<td><img src="./images/amazon.png"></td>
-							<td><img src="./images/epic_use.png"></td>
-						</tr>
-						<tr>
-							<td><i>Bachelor of Science in Mechanical Engineering<br>Minor in Engineering Corporate Practice<br>2010 - 2014</i></td>
-							<td><i>Leadership Operations Intern<br>Summers 2012 & 2013</i></td>
-							<td><i>Team Lead Manager<br>Technical Coordinator<br>2014 to Current</i</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-						</tr>
-					</tbody>
-				</table>
+				<div id="expOptions" class="expOptionsTable">
+					<a href="#profExp" id="expEduImg" onclick="showExpSection(this.id)" class="expOptIndv"><img src="./images/nd.png"width="100%" height="100%"><a>
+					<a href="#profExp" id="expAmaImg" onclick="showExpSection(this.id)" class="expOptIndv"><img src="./images/amazon.png"width="100%" height="100%"><a>
+					<a href="#profExp" id="expEpicImg" onclick="showExpSection(this.id)" class="expOptIndv"><img src="./images/epic_use.png"width="100%" height="100%"><a>
+				</div>
+				<div id="eduDetails" class="dispNone">
+					<table class="expDetailsTable">
+						<tbody>
+							<tr>
+								<td><img src="./images/nd.png" class="exp_detail" width="250px" height="auto"></td>
+								<td>
+									1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</td>
+								<td><a href="#profExp" onclick="resetExperience()"><img src="./images/returnarrow.png" class="returnarrow" width="100%" height="100%"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="amaDetails" class="dispNone">
+					<table class="expDetailsTable">
+						<tbody>
+							<tr>
+								<td><img src="./images/amazon.png" class="exp_detail" width="250px" height="auto"></td>
+								<td>
+									1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</td>
+								<td><a href="#profExp" onclick="resetExperience()"><img src="./images/returnarrow.png" class="returnarrow" width="100%" height="100%"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="epicDetails" class="dispNone">
+					<table class="expDetailsTable">
+						<tbody>
+							<tr>
+								<td><img src="./images/epic_use.png" class="exp_detail" width="250px" height="auto"></td>
+								<td>
+									1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</td>
+								<td><a href="#profExp" onclick="resetExperience()"><img src="./images/returnarrow.png" class="returnarrow" width="100%" height="100%"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 		</div>
 		<div id="favReads" class="dispNone">
 				<div class="section_header">

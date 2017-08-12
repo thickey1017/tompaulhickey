@@ -120,7 +120,6 @@ text-align:center;
 	text-align:left;
 	word-wrap:break-word;
 }
-#deepDetails{text-align:center;}
 .returnarrow{
 	width:25px;
 	height:auto;
@@ -150,19 +149,34 @@ padding:10px;
 /*-------------------End About Me-----------------------*/
 /*-------------------Experience-----------------------*/
 #profExp{
-height:250px;
 width:100%;
-background-color:rgba(256,256,256,.8)
+width:100%;
+background-color:rgba(256,256,256,.8);
+text-align:center;
 }
-#profExp img{
-width:200px;
-height:auto;	
-margin:0 70px 0 70px;
-}
-.profExpTable{
+
+.expOptIndv{
+	display:inline-block;
+	background-color:none;
+	text-decoration:none;
+	width:270px;
+	height:auto;
+	color:transparent;
 	text-align:center;
-	margin:auto;
-	width:70%;
+	margin:20px;
+}
+.expOptIndv:hover{
+background-color:rgba(256,256,256,.5);
+}
+.expDetailsTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.expDetailsTable td{
+	text-align:left;
+	padding:10px;
+	word-wrap:break-word;
 }
 /*-------------------End Experience-----------------------*/
 /*-------------------Patient Engagement-----------------------*/

@@ -7,6 +7,7 @@ function showSection(clicked_id) {
 					$("#favReads").addClass("dispNone");
 					resetBooks();
 					resetPatEng();
+					resetExperience();
 				} else if (clicked_id=="profExpLink") {
 					$("#profExp").removeClass("dispNone");
 					$("#rehome").removeClass("dispNone");
@@ -15,6 +16,7 @@ function showSection(clicked_id) {
 					$("#favReads").addClass("dispNone");
 					resetBooks();
 					resetPatEng();
+					resetExperience();
 				} else if (clicked_id=="favReadsLink"){
 					$("#favReads").removeClass("dispNone");
 					$("#rehome").removeClass("dispNone");
@@ -23,6 +25,7 @@ function showSection(clicked_id) {
 					$("#aboutMe").addClass("dispNone");
 					resetBooks();
 					resetPatEng();
+					resetExperience();
 				} else if (clicked_id=="patEngLink"){
 					$("#patEng").removeClass("dispNone");
 					$("#rehome").removeClass("dispNone");
@@ -31,6 +34,7 @@ function showSection(clicked_id) {
 					$("#aboutMe").addClass("dispNone");
 					resetBooks();
 					resetPatEng();
+					resetExperience();
 				} else if (clicked_id=="rehome"){
 					$("#patEng").addClass("dispNone");
 					$("#rehome").addClass("dispNone");
@@ -39,6 +43,7 @@ function showSection(clicked_id) {
 					$("#aboutMe").addClass("dispNone");
 					resetBooks();
 					resetPatEng();
+					resetExperience();
 				}
 }
 function showReadSection(clicked_id) {
@@ -49,19 +54,32 @@ function showReadSection(clicked_id) {
 				} else if (clicked_id=="fountainImg") {$("#fountainDetails").removeClass("dispNone");
 				}
 }
-function resetBooks(){
-				$("#readOptions").removeClass("dispNone");
-				$("#ggsDetails").addClass("dispNone");
-				$("#driveDetails").addClass("dispNone");
-				$("#deepDetails").addClass("dispNone");
-				$("#fountainDetails").addClass("dispNone");
-}
 function showPatEngSection(clicked_id) {
 				$("#patEngMenu").addClass("dispNone");
 				if (clicked_id=="patEngMULink") {$("#patEngMU").removeClass("dispNone");
 				} else if (clicked_id=="patEngExpLink") {$("#patEngExp").removeClass("dispNone");
 				} else if (clicked_id=="patEngStrategyLink") {$("#patEngStrategy").removeClass("dispNone");
 				}
+}
+function showExpSection(clicked_id) {
+				$("#expOptions").addClass("dispNone");
+				if (clicked_id=="expEduImg") {$("#eduDetails").removeClass("dispNone");
+				} else if (clicked_id=="expAmaImg") {$("#amaDetails").removeClass("dispNone");
+				} else if (clicked_id=="expEpicImg") {$("#epicDetails").removeClass("dispNone");
+				}
+}
+function resetExperience(){
+				$("#expOptions").removeClass("dispNone");
+				$("#eduDetails").addClass("dispNone");
+				$("#amaDetails").addClass("dispNone");
+				$("#epicDetails").addClass("dispNone");
+}
+function resetBooks(){
+				$("#readOptions").removeClass("dispNone");
+				$("#ggsDetails").addClass("dispNone");
+				$("#driveDetails").addClass("dispNone");
+				$("#deepDetails").addClass("dispNone");
+				$("#fountainDetails").addClass("dispNone");
 }
 function resetPatEng(){
 				$("#patEngMenu").removeClass("dispNone");
