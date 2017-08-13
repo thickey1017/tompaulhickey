@@ -1,4 +1,5 @@
 /* Stylesheet for custom page*/
+
 body{
 	margin:0px;
 	background:url(../images/stars.jpg)no-repeat center center fixed;
@@ -224,8 +225,8 @@ background-color:rgba(256,256,256,.8)
 .dispNone{
 display:none!important;	
 }
+@media screen and (max-width 300px){
+.title{color:red;}
+}
 /*----------------End Master Switch Class---------------*/
 /*------------------Begin Mobile/Small Screen Only------------------*/
-@media only screen and (max-width: 1200px)
-{
-}
