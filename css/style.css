@@ -1,5 +1,4 @@
 /* Stylesheet for custom page*/
-
 body{
 	margin:0px;
 	background:url(../images/stars.jpg)no-repeat center center fixed;
@@ -148,9 +147,9 @@ padding:10px;
 /*-------------------Experience-----------------------*/
 #profExp{
 width:100%;
-width:100%;
 background-color:rgba(256,256,256,.8);
 text-align:center;
+padding:10px;
 }
 
 .expOptIndv{
@@ -179,9 +178,12 @@ background-color:rgba(256,256,256,.5);
 /*-------------------End Experience-----------------------*/
 /*-------------------Patient Engagement-----------------------*/
 #patEng{
-height:250px;
-width:100%;
-background-color:rgba(256,256,256,.8)	
+	text-align:center;
+	height:100%;
+	width:100%;
+	background-color:rgba(256,256,256,.8);
+	padding:10px;
+}
 }
 .patEngOptionsTable{
 	margin-top:25px;
@@ -225,8 +227,8 @@ background-color:rgba(256,256,256,.8)
 .dispNone{
 display:none!important;	
 }
-@media screen and (max-width 300px){
-.title{color:red;}
-}
 /*----------------End Master Switch Class---------------*/
 /*------------------Begin Mobile/Small Screen Only------------------*/
+@media screen  and (max-width: 320px) /* Phone */ {
+
+}
