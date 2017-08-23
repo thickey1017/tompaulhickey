@@ -27,8 +27,11 @@ font-size:20px;
 .title{
 color:#fff9e9;
 width:100%;
-display:block;
+display:inline-block;
 padding:20px;
+}
+.mobileTitle{
+	display:none:
 }
 .social{
     display: inline-block;
@@ -111,15 +114,6 @@ text-align:center;
 	text-align:center;
 	margin:20px;
 }
-.bookDetailsTable{
-    margin-left:auto; 
-    margin-right:auto;
-	width:75%;
-}
-.bookDetailsTable td{
-	text-align:left;
-	word-wrap:break-word;
-}
 .returnarrow{
 	width:25px;
 	height:auto;
@@ -132,14 +126,11 @@ width:100%;
 background-color:rgba(256,256,256,.8);
 padding:10px;
 }
-.aboutMeTable img{
+img.aboutTabImg{
 	width:300px;
 	height:auto;
 	padding:5px;
 	border-radius:15px;
-}
-.aboutMeTable{
-	width:100%;
 }
 
 
@@ -164,16 +155,6 @@ padding:10px;
 }
 .expOptIndv:hover{
 background-color:rgba(256,256,256,.5);
-}
-.expDetailsTable {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-}
-.expDetailsTable td{
-	text-align:left;
-	padding:10px;
-	word-wrap:break-word;
 }
 /*-------------------End Experience-----------------------*/
 /*-------------------Patient Engagement-----------------------*/
@@ -228,7 +209,53 @@ background-color:rgba(256,256,256,.5);
 display:none!important;	
 }
 /*----------------End Master Switch Class---------------*/
+/*-------------------Details Table----------------------*/
+.DetailsTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.DetailsTable td{
+	text-align:left;
+	padding:10px;
+	word-wrap:break-word;
+}
+/*-----------------End Details Table--------------------*/
 /*------------------Begin Mobile/Small Screen Only------------------*/
 @media screen  and (max-width: 320px) /* Phone */ {
-
+	/*-------Begin Table Details-------------*/
+	.DetailsTable td,
+	.DetailsTable th,
+	.DetailsTable tbody th,
+	.DetailsTable tbody td,
+	.DetailsTable thead td,
+	.DetailsTable thead th {
+		display: table-row-group;
+		vertical-align: middle;
+		margin: 0;
+		width:100%;
+	}
+	.DetailsTable, .title{
+		width:90%;
+	}
+	img.expTabImg, img.aboutTabImg{
+		width:100%;
+		padding:0px;
+	}
+	/*-------End Table Details-------------*/
+	/*---------Begin Nav Section-------------*/
+	.nav{
+		width:100%;
+		text-align:center;
+	}
+	.nav_indv, .social{
+		width:40%;
+		height:auto;
+		background-color:transparent;
+		margin:5px;
+	}
+	/*----------End Nav Changes--------------*/
+	#aboutMe{
+		padding:0px;
+	}
 }
