@@ -222,7 +222,7 @@ display:none!important;
 }
 /*-----------------End Details Table--------------------*/
 /*------------------Begin Mobile/Small Screen Only------------------*/
-@media screen  and (max-width-device: 500px) /* Phone */ {
+@media only screen  and (max-device-width: 500px) {
 	/*-------Begin Table Details-------------*/
 	.DetailsTable td,
 	.DetailsTable th,
