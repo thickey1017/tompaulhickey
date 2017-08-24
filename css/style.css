@@ -226,6 +226,9 @@ display:none!important;
 	.title h1{font-size:1em;}
 	.title h3{font-size:.8em;}
 	/*-------Begin Table Details-------------*/
+	.patEngTables{
+		text-align:center;
+	}
 	.DetailsTable td,
 	.DetailsTable th,
 	.DetailsTable tbody th,
