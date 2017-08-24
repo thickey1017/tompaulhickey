@@ -258,4 +258,8 @@ display:none!important;
 	#aboutMe{
 		padding:0px;
 	}
+	.patEng_options_single{
+		display:block;
+		width:90%;
+		margin:5px;
 }
