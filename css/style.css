@@ -223,6 +223,8 @@ display:none!important;
 /*-----------------End Details Table--------------------*/
 /*------------------Begin Mobile/Small Screen Only------------------*/
 @media only screen  and (max-device-width: 500px) {
+	.title h1{font-size:1em;}
+	.title h3{font-size:.8em;}
 	/*-------Begin Table Details-------------*/
 	.DetailsTable td,
 	.DetailsTable th,
@@ -234,13 +236,15 @@ display:none!important;
 		vertical-align: middle;
 		margin: 0;
 		width:100%;
+		text-align:center;
 	}
 	.DetailsTable, .title{
 		width:90%;
 	}
-	img.expTabImg, img.aboutTabImg{
+	img.expTabImg, img.aboutTabImg, img.books_detail{
 		width:100%;
 		padding:0px;
+		margin:0px;
 	}
 	/*-------End Table Details-------------*/
 	/*---------Begin Nav Section-------------*/
@@ -253,13 +257,29 @@ display:none!important;
 		height:auto;
 		background-color:transparent;
 		margin:5px;
+		font-size:0em;
 	}
 	/*----------End Nav Changes--------------*/
-	#aboutMe{
+	#aboutMe, #profExp, #patEng, #favReads{
 		padding:0px;
+	}
+	/*---------Begin Pat Eng Section-------------*/
+	.patEngContainer{
+		text-align:center;
 	}
 	.patEng_options_single{
 		display:block;
-		width:90%;
+		width:80%;
 		margin:5px;
+	}
+	/*---------End Pat Eng Section-------------*/
+	/*---------Begin Book Section--------------*/
+	.books_indv{
+		width:40%;
+		height:auto;
+		background-color:transparent;
+		margin:5px;
+		font-size:0em;
+	}
+	/*----------End Book Section---------------*/
 }
