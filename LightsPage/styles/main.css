@@ -1,0 +1,21 @@
+html, body{
+	    font-family: Verdana,sans-serif;
+}
+
+.startContainer{
+	width:95%;
+	text-align:center;
+}
+.startButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+	width:24%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+.startButton:hover {
+	cursor: pointer;
+}

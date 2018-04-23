@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/jshue-2.1.1/src/jshue.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="/scripts/lights.js"></script>
+		<link rel="stylesheet" href="/styles/slider.css">
+		<link rel="stylesheet" href="/styles/main.css">
+	</head>
+	<body onload="Initialize()">
+		<!--
+		1 - Kitchen Left
+		2 - Living Room Lower
+		3 - Kitchen Right
+		4 - Living Room Upper
+		5 - Living Room Buffalo/Lamp
+		6 - Kitchen Main
+		-->
+		Welcome to Tom's Apartment, would you like to control the lights?<br>
+		<div class="startContainer">
+			<button type="submit" class="startButton" onclick="Initialize()">Initialize/Update</button>
+			<button type="submit" class="startButton" onclick="DiscoverBridges()">Discover Bridges</button>
+			<button type="submit" class="startButton" onclick="TurnAll()">Turn All On</button>
+			<button type="submit" class="startButton" onclick="TurnAll(0)">Turn All Off</button>
+		</div>
+		<!--
+		On:  
+		<button type="submit" onclick="SingleBulb(1,1)">Kitchen Left</button>
+		<button type="submit" onclick="SingleBulb(3,1)">Kitchen Right</button>
+		<button type="submit" onclick="SingleBulb(6,1)">Kitchen Main</button>
+		<button type="submit" onclick="SingleBulb(2,1)">Living Room Lower</button>
+		<button type="submit" onclick="SingleBulb(4,1)">Living Room Upper</button>
+		<button type="submit" onclick="SingleBulb(5,1)">Living Room Buffalo</button>
+		<br>
+		Off: 
+		<button type="submit" onclick="SingleBulb(1,0)">Kitchen Left</button>
+		<button type="submit" onclick="SingleBulb(3,0)">Kitchen Right</button>
+		<button type="submit" onclick="SingleBulb(6,0)">Kitchen Main</button>
+		<button type="submit" onclick="SingleBulb(2,0)">Living Room Lower</button>
+		<button type="submit" onclick="SingleBulb(4,0)">Living Room Upper</button>
+		<button type="submit" onclick="SingleBulb(5,0)">Living Room Buffalo</button>
+		-->
+		<div class="slidecontainer">
+			<table>
+				<tbody>
+					<tr>
+					<td>Kitchen Left</td>
+					
+					<td><input type="range" min="0" max="254" class="slider" id="myRange1" oninput="SingleBulbSlider(1,this)"></td>
+					</tr>
+					<tr>
+					<td>Kitchen Right</td>
+					<td><input type="range" min="0" max="254" class="slider" id="myRange3" oninput="SingleBulbSlider(3,this)"></td>
+					</tr>
+					<tr>
+					<td>Kitchen Main</td>
+					<td><input type="range" min="0" max="254" class="slider" id="myRange6" oninput="SingleBulbSlider(6,this)"></td>
+					</tr>
+					<tr>
+					<td>Living Room Lower</td>
+					<td><input type="range" min="0" max="254" class="slider" id="myRange2" oninput="SingleBulbSlider(2,this)"></td>
+					</tr>
+					<tr>
+					<td>Living Room Upper</td>
+					<td><input type="range" min="0" max="254" class="slider" id="myRange4" oninput="SingleBulbSlider(4,this)"></td>
+					</tr>
+					<tr>
+					<td>Living Room Lamp</td>
+					<td><input type="range" min="0" max="254" class="slider" id="myRange5" oninput="SingleBulbSlider(5,this)"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
+
+
+
+
