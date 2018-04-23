@@ -16,32 +16,15 @@
 		5 - Living Room Buffalo/Lamp
 		6 - Kitchen Main
 		-->
-		Welcome to Tom's Apartment, would you like to control the lights?<br>
+		<div class="header">Tom's Light Control</div>
 		<div class="startContainer">
 			<button type="submit" class="startButton" onclick="Initialize()">Initialize/Update</button>
 			<button type="submit" class="startButton" onclick="DiscoverBridges()">Discover Bridges</button>
 			<button type="submit" class="startButton" onclick="TurnAll()">Turn All On</button>
 			<button type="submit" class="startButton" onclick="TurnAll(0)">Turn All Off</button>
 		</div>
-		<!--
-		On:  
-		<button type="submit" onclick="SingleBulb(1,1)">Kitchen Left</button>
-		<button type="submit" onclick="SingleBulb(3,1)">Kitchen Right</button>
-		<button type="submit" onclick="SingleBulb(6,1)">Kitchen Main</button>
-		<button type="submit" onclick="SingleBulb(2,1)">Living Room Lower</button>
-		<button type="submit" onclick="SingleBulb(4,1)">Living Room Upper</button>
-		<button type="submit" onclick="SingleBulb(5,1)">Living Room Buffalo</button>
-		<br>
-		Off: 
-		<button type="submit" onclick="SingleBulb(1,0)">Kitchen Left</button>
-		<button type="submit" onclick="SingleBulb(3,0)">Kitchen Right</button>
-		<button type="submit" onclick="SingleBulb(6,0)">Kitchen Main</button>
-		<button type="submit" onclick="SingleBulb(2,0)">Living Room Lower</button>
-		<button type="submit" onclick="SingleBulb(4,0)">Living Room Upper</button>
-		<button type="submit" onclick="SingleBulb(5,0)">Living Room Buffalo</button>
-		-->
 		<div class="slidecontainer">
-			<table>
+			<table id="sliderTable">
 				<tbody>
 					<tr>
 					<td>Kitchen Left</td>

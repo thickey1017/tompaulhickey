@@ -1,11 +1,22 @@
 html, body{
 	    font-family: Verdana,sans-serif;
 }
-
-.startContainer{
-	width:95%;
+.header{
+	width:100%;
 	text-align:center;
+	background-color:#6ea9b5;
+	height:45px;
+	font-size:2em;
+	margin:auto;
+	margin-bottom:5px;
 }
+.startContainer{
+	width:100%;
+	text-align:center;
+	margin:auto;
+	height:30px;
+}
+
 .startButton {
     background-color: #4CAF50; /* Green */
     border: none;
