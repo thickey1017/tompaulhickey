@@ -10,7 +10,7 @@
 	display:inline-block;
 	width:100%;
 	background-color:#6ea9b5;
-	height:30px;
+	height:60px;
 	text-align:center;
 }
 #sliderTable td:nth-child(2) {
@@ -19,8 +19,12 @@
 #sliderTable td{
 	padding:0;
 }
+#sliderTable td p{
+	vertical-align:middle;
+}
 #sliderTable tr{
 	vertical-align:middle;
+	height:60px;
 }
 .slidecontainer {
 	vertical-align:middle;
@@ -33,7 +37,7 @@
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
-    height: 30px; /* Specified height */
+	height:60px;
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -51,15 +55,15 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 60px; /* Set a specific slider handle width */
+    height: 60px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 60px; /* Set a specific slider handle width */
+    height: 60px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }

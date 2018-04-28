@@ -18,37 +18,38 @@
 		-->
 		<div class="header">Tom's Light Control</div>
 		<div class="startContainer">
-			<button type="submit" class="startButton" onclick="Initialize()">Initialize/Update</button>
-			<button type="submit" class="startButton" onclick="DiscoverBridges()">Discover Bridges</button>
 			<button type="submit" class="startButton" onclick="TurnAll()">Turn All On</button>
 			<button type="submit" class="startButton" onclick="TurnAll(0)">Turn All Off</button>
+		</div>
+		<div class="startContainer">
+			<button type="submit" class="startButton" onclick="Initialize()">Initialize/Update</button>
+			<button type="submit" class="startButton" onclick="DiscoverBridges()">Discover Bridges</button>
 		</div>
 		<div class="slidecontainer">
 			<table id="sliderTable">
 				<tbody>
 					<tr>
-					<td>Kitchen Left</td>
-					
+					<td><p>Kitchen Left</p></td>
 					<td><input type="range" min="0" max="254" class="slider" id="myRange1" oninput="SingleBulbSlider(1,this)"></td>
 					</tr>
 					<tr>
-					<td>Kitchen Right</td>
+					<td><p>Kitchen Right</p></td>
 					<td><input type="range" min="0" max="254" class="slider" id="myRange3" oninput="SingleBulbSlider(3,this)"></td>
 					</tr>
 					<tr>
-					<td>Kitchen Main</td>
+					<td><p>Kitchen Main</p></td>
 					<td><input type="range" min="0" max="254" class="slider" id="myRange6" oninput="SingleBulbSlider(6,this)"></td>
 					</tr>
 					<tr>
-					<td>Living Room Lower</td>
+					<td><p>Living Room Lower</p></td>
 					<td><input type="range" min="0" max="254" class="slider" id="myRange2" oninput="SingleBulbSlider(2,this)"></td>
 					</tr>
 					<tr>
-					<td>Living Room Upper</td>
+					<td><p>Living Room Upper</p></td>
 					<td><input type="range" min="0" max="254" class="slider" id="myRange4" oninput="SingleBulbSlider(4,this)"></td>
 					</tr>
 					<tr>
-					<td>Living Room Lamp</td>
+					<td><p>Living Room Lamp</p></td>
 					<td><input type="range" min="0" max="254" class="slider" id="myRange5" oninput="SingleBulbSlider(5,this)"></td>
 					</tr>
 				</tbody>
