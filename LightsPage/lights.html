@@ -16,16 +16,19 @@
 		5 - Living Room Buffalo/Lamp
 		6 - Kitchen Main
 		-->
-		<div class="header">Tom's Light Control</div>
+		<div class="overlay">
+		<div class="header"><p>Tom's Light Control</p></div>
 		<div class="startContainer">
 			<button type="submit" class="startButton" onclick="TurnAll()">Turn All On</button>
 			<button type="submit" class="startButton" onclick="TurnAll(0)">Turn All Off</button>
 		</div>
 		<div class="startContainer">
-			<button type="submit" class="startButton" onclick="Initialize()">Initialize/Update</button>
-			<button type="submit" class="startButton" onclick="DiscoverBridges()">Discover Bridges</button>
+			<!--<button type="submit" class="startButton" onclick="Initialize()">Initialize/Update</button>
+			<button type="submit" class="startButton" onclick="DiscoverBridges()">Discover Bridges</button>-->
+			<button type="submit" class="startButton" onclick="SetMood(1)">Movie Time</button>
+			<button type="submit" class="startButton" onclick="SetMood(2)">Party Time</button>
 		</div>
-		<div class="slidecontainer">
+		<div class="slideContainer">
 			<table id="sliderTable">
 				<tbody>
 					<tr>
@@ -54,6 +57,7 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
 		</div>
 	</body>
 </html>

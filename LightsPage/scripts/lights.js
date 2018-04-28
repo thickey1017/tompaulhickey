@@ -61,16 +61,19 @@
 		}
 		Initialize();
 	}
-	function SingleBulb(bulbID,onoff) {
+	//===Set Single Bulb===
+	// Purpose - Sets single bulb. Does NOT call Initialize to update sliders
+	function SingleBulb(bulbID,onoff,brightness) {
 		var hue = jsHue();
 		var bridge = hue.bridge('192.168.0.2');
 		var username = '8LqWCl9mNwR7esvuw6OS9JHsvdvGpwZTMclgH8Eb';
 		var user = bridge.user(username);
-		if (onoff == 0) {
-			user.setLightState(bulbID, { on: false }).then(data => {})
-		} else if (onoff == 1) {
-			user.setLightState(bulbID, { on: true }).then(data => {})
-		}
+		var newBulbState= new Object(); //Create literal object for second parameter to update bulb
+		newBulbState.bri = brightness;
+		if (onoff == 0) {newBulbState.on = false;}
+		else if (brightness<1) {newBulbState.on = false;}
+		else {newBulbState.on = true;}
+		user.setLightState(bulbID, newBulbState ).then(data => {})
 	}
 	//===SingleBulbSlider===
 	// Purpose - Changes bulb state based on slider input
@@ -92,4 +95,33 @@
 		if (brightness == 0) {newBulbState.on = false;}
 		else {newBulbState.on = true;}
 		user.setLightState(bulbID, newBulbState ).then(data => {})
+	}
+	
+	//===Set Moods====
+	// Purpose - Turn off kitchen lights, dim living room
+	// Called - on button
+	//	1 - Kitchen Left
+	//	2 - Living Room Lower
+	//	3 - Kitchen Right
+	//	4 - Living Room Upper
+	//	5 - Living Room Buffalo/Lamp
+	//	6 - Kitchen Main
+	function SetMood(mood) {
+		if (mood == 1) { //Movie Time
+			SingleBulb(1,0)
+			SingleBulb(2,1,5)
+			SingleBulb(3,0)
+			SingleBulb(4,1,5)
+			SingleBulb(5,1,5)
+			SingleBulb(6,0) }
+		else if (mood == 2) { //Party Time
+			for (count=1; count < 100; count++) {
+				brightness=Math.floor(Math.random() * 254) + 1;  // returns a number between 1 and 255
+				bulbID=Math.floor(Math.random() * 6) + 1;  // returns a number between 1 and 6
+				onoff=Math.floor(Math.random() * 2) //returns 0, 1 or 2. Every third call will be for off
+				SingleBulb(bulbID,onoff,brightness)
+			}
+		}
+		TurnAll(1);
+		Initialize();
 	}

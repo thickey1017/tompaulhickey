@@ -1,20 +1,36 @@
 html, body{
 	    font-family: Verdana,sans-serif;
 }
+/*==========Main Sizing==============*/
+.header{height:10%;}
+.startContainer{height:30%;}
+.slideContainer{height:30%;}
+/*===================================*/
+.overlay{
+    opacity:0.8;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
 .header{
 	width:100%;
 	text-align:center;
 	background-color:#6ea9b5;
-	height:45px;
-	font-size:2em;
+	font-size:50px;
 	margin:auto;
 	margin-bottom:5px;
+}
+.header p{
+	padding:10px;
 }
 .startContainer{
 	width:100%;
 	text-align:center;
 	margin:auto;
-	height:80px;
 	display:block;
     padding: 2px;
     margin: 0px;
@@ -29,7 +45,7 @@ html, body{
 	height:100%;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 50px;
 	
 }
 .startButton:hover {
